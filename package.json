@@ -1,0 +1,12 @@
+{
+  "name": "alfred-vs-code",
+  "version": "1.0.0",
+  "description": "Alfred workflow that allows you to browse and open Visual Studio Code projects",
+  "dependencies": {
+    "alfred-workflow-nodejs": "^2.0.1",
+    "fs-extra": "^4.0.1",
+    "fuzzaldrin": "^2.1.0"
+  },
+  "author": "Konstantin Büschel <konstantin.bueschel@gmail.com>",
+  "license": "MIT"
+}
