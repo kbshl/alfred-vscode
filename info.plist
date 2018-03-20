@@ -183,6 +183,9 @@ Requirements:
 Installation:
 Download the latest VisualStudioCode.alfredworkflow from GitHub https://github.com/konstantinbueschel/alfred-vs-code/releases and import it in Alfred.
 
+Note:
+If you happen to use the Insiders Edition you need to set the 'vscodeEdition' variable in Workflow Configuration to 'code-insiders'!
+
 Usage:
 Simply type vsc followed by space to list all projects. Optionally type a search string to filter results.</string>
 	<key>uidata</key>
