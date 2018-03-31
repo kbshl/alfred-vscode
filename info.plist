@@ -62,7 +62,7 @@
 				<key>escaping</key>
 				<integer>98</integer>
 				<key>script</key>
-				<string>${vscodePath:-/usr/local/bin/code} {query}</string>
+				<string>/usr/local/bin/${vscodeEdition} {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -183,6 +183,9 @@ Requirements:
 Installation:
 Download the latest VisualStudioCode.alfredworkflow from GitHub https://github.com/konstantinbueschel/alfred-vs-code/releases and import it in Alfred.
 
+Note:
+If you happen to use the Insiders Edition you need to set the 'vscodeEdition' variable in Workflow Configuration to 'code-insiders'!
+
 Usage:
 Simply type vsc followed by space to list all projects. Optionally type a search string to filter results.</string>
 	<key>uidata</key>
@@ -222,13 +225,12 @@ Simply type vsc followed by space to list all projects. Optionally type a search
 		<string>/usr/local/bin/node</string>
 		<key>terminalApp</key>
 		<string></string>
-		<key>vscodePath</key>
-		<string></string>
+		<key>vscodeEdition</key>
+		<string>code</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
 		<string>terminalApp</string>
-		<string>vscodePath</string>
 	</array>
 	<key>version</key>
 	<string>1.0.0</string>

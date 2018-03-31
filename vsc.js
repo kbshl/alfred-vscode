@@ -24,8 +24,8 @@ function getProjectFilePath() {
     else {
         appdata = process.platform === 'darwin' ? process.env.HOME + '/Library/Application Support' : '/var/local';
     }
-    
-    let channelPath = getChannelPath();
+
+    let channelPath = getChannelPath(appdata);
     let projectFile = path.join(appdata, channelPath, 'User', PROJECTS_FILE);
 
     // In linux, it may not work with /var/local, then try to use /home/myuser/.config
@@ -37,19 +37,16 @@ function getProjectFilePath() {
 }
 
 
-function getChannelPath() {
-    
+function getChannelPath(appdata) {
+
     'use strict'
-    
-    // TODO: Determine witch version of Visual Studio Code the use is using
-    /* if (vscode.env.appName.indexOf("Insiders") > 0) {
+
+    if (fse.existsSync(appdata + '/Code - Insiders')) {
         return "Code - Insiders";
-    } 
+    }
     else {
         return "Code";
-    } */
-
-    return 'Code';
+    }
 }
 
 
