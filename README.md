@@ -16,6 +16,7 @@ Simple workflow that allows you to browse and open [Visual Studio Code](https://
 ## Installation
 
 Download the latest `VisualStudioCode.alfredworkflow` from [GitHub](https://github.com/konstantinbueschel/alfred-vs-code/releases) and import it in Alfred.
+
 **Note for Insiders Edition users:** Remember to set the 'vscodeEdition' variable in Workflow Configuration to 'code-insiders'!
 
 ## Usage
