@@ -1,0 +1,32 @@
+### macOS
+.DS_Store
+tmp
+Thumbs.db
+
+### Mercurial template
+/.hg/*
+*/.hg/*
+.hgignore
+
+### Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+## Dependency directory
+## Commenting this out is preferred by some people, see
+## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
+/node_modules
+
+### nodeJS
+npm-debug.log
+
+### VS Code
+.vscode/*
+!.vscode/tasks.json
+.history/*
+
+### intelliJ
+.idea
+
+### Builds
+build.log
+build
