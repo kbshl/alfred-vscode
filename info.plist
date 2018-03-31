@@ -105,6 +105,8 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -170,24 +172,36 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Alfred Visual Studio Code Project Manager Workflow
+	<string># Alfred Visual Studio Code Project Manager Workflow
 
-Simple workflow that allows you to browse and open Visual Studio Code https://code.visualstudio.com projects.
+Simple workflow that allows you to browse and open [Visual Studio Code](https://code.visualstudio.com/) projects.
 
-Requirements:
-- NodeJS https://nodejs.org
-- Visual Studio Code Project Manager https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager
-- Visual Studio Code Command Line https://code.visualstudio.com/docs/setup/mac
-- Alfred Powerpack https://www.alfredapp.com/powerpack
+* [Requirements](#requirements)
+* [Installation](#installation)
+* [Usage](#usage)
 
-Installation:
-Download the latest VisualStudioCode.alfredworkflow from GitHub https://github.com/konstantinbueschel/alfred-vs-code/releases and import it in Alfred.
+## Requirements
 
-Note:
-If you happen to use the Insiders Edition you need to set the 'vscodeEdition' variable in Workflow Configuration to 'code-insiders'!
+* [NodeJS](https://nodejs.org)
+* [Visual Studio Code Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
+* [Visual Studio Code Command Line](https://code.visualstudio.com/docs/setup/mac)
+* [Alfred Powerpack](https://www.alfredapp.com/powerpack)
 
-Usage:
-Simply type vsc followed by space to list all projects. Optionally type a search string to filter results.</string>
+## Installation
+
+Download the latest `VisualStudioCode.alfredworkflow` from [GitHub](https://github.com/konstantinbueschel/alfred-vs-code/releases) and import it in Alfred.
+
+**Note for Insiders Edition users:** Remember to set the 'vscodeEdition' variable in Workflow Configuration to 'code-insiders'!
+
+## Usage
+
+Simply type `vsc` followed by space to list all projects. Optionally type a search string to filter results.
+
+![alfred-vs-code](documentation/screenshot.png)
+
+## Thanks!
+
+Big Thanks to [Cloudstek](https://github.com/Cloudstek) for his [Alfred Atom Workflow](https://github.com/Cloudstek/alfred-atom) which I used as a base for this project.</string>
 	<key>uidata</key>
 	<dict>
 		<key>16C325FD-9D57-4988-9A88-CE69B2EF34FA</key>
@@ -233,7 +247,7 @@ Simply type vsc followed by space to list all projects. Optionally type a search
 		<string>terminalApp</string>
 	</array>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.1.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/konstantinbueschel/alfred-vs-code</string>
 </dict>
