@@ -8,6 +8,29 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>48B1068B-C755-4DBE-BDAB-9F24B0EE3354</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7F96C0AC-981E-4579-AFF4-CB907D33CAC4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0344F04E-AC60-4847-AA73-E093D16BBB46</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>Open within VS Code as new window</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4DD30082-AABC-4CFA-8FC3-0738FA31C350</key>
 		<array>
 			<dict>
@@ -60,7 +83,7 @@
 				<key>concurrently</key>
 				<true/>
 				<key>escaping</key>
-				<integer>98</integer>
+				<integer>0</integer>
 				<key>script</key>
 				<string>/usr/local/bin/${vscodeEdition} {query}</string>
 				<key>scriptargtype</key>
@@ -74,29 +97,6 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>8A722A20-D801-4DAC-AA32-80052ADC87D4</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<true/>
-				<key>escaping</key>
-				<integer>98</integer>
-				<key>script</key>
-				<string>open -a Finder {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>76A26469-7BB5-46C5-ADFE-C95581EB9B95</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -155,6 +155,29 @@
 				<key>escaping</key>
 				<integer>98</integer>
 				<key>script</key>
+				<string>open -a Finder {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>76A26469-7BB5-46C5-ADFE-C95581EB9B95</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>98</integer>
+				<key>script</key>
 				<string>open -a ${terminalApp:-Terminal} {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -167,6 +190,128 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>16C325FD-9D57-4988-9A88-CE69B2EF34FA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>/usr/local/bin/${vscodeEdition} "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7F96C0AC-981E-4579-AFF4-CB907D33CAC4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemAlternateNames</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>vs</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array>
+					<string>~</string>
+				</array>
+				<key>subtext</key>
+				<string>Open within Visual Studio Code</string>
+				<key>title</key>
+				<string>Visual Studio Code</string>
+				<key>types</key>
+				<array/>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>48B1068B-C755-4DBE-BDAB-9F24B0EE3354</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>/usr/local/bin/${vscodeEdition} --new-window "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0344F04E-AC60-4847-AA73-E093D16BBB46</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -204,12 +349,26 @@ Simply type `vsc` followed by space to list all projects. Optionally type a sear
 Big Thanks to [Cloudstek](https://github.com/Cloudstek) for his [Alfred Atom Workflow](https://github.com/Cloudstek/alfred-atom) which I used as a base for this project.</string>
 	<key>uidata</key>
 	<dict>
+		<key>0344F04E-AC60-4847-AA73-E093D16BBB46</key>
+		<dict>
+			<key>xpos</key>
+			<integer>520</integer>
+			<key>ypos</key>
+			<integer>550</integer>
+		</dict>
 		<key>16C325FD-9D57-4988-9A88-CE69B2EF34FA</key>
 		<dict>
 			<key>xpos</key>
 			<integer>520</integer>
 			<key>ypos</key>
 			<integer>300</integer>
+		</dict>
+		<key>48B1068B-C755-4DBE-BDAB-9F24B0EE3354</key>
+		<dict>
+			<key>xpos</key>
+			<integer>120</integer>
+			<key>ypos</key>
+			<integer>420</integer>
 		</dict>
 		<key>4DD30082-AABC-4CFA-8FC3-0738FA31C350</key>
 		<dict>
@@ -224,6 +383,13 @@ Big Thanks to [Cloudstek](https://github.com/Cloudstek) for his [Alfred Atom Wor
 			<integer>520</integer>
 			<key>ypos</key>
 			<integer>180</integer>
+		</dict>
+		<key>7F96C0AC-981E-4579-AFF4-CB907D33CAC4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>520</integer>
+			<key>ypos</key>
+			<integer>420</integer>
 		</dict>
 		<key>8A722A20-D801-4DAC-AA32-80052ADC87D4</key>
 		<dict>
@@ -247,7 +413,7 @@ Big Thanks to [Cloudstek](https://github.com/Cloudstek) for his [Alfred Atom Wor
 		<string>terminalApp</string>
 	</array>
 	<key>version</key>
-	<string>1.1.0</string>
+	<string>1.2.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/konstantinbueschel/alfred-vs-code</string>
 </dict>
