@@ -42,9 +42,9 @@
     "release": "npx standard-version"
   },
   "dependencies": {
-    "alfred-workflow-nodejs": "^2.0.1",
+    "alfy": "^0.8.0",
     "fs-extra": "^4.0.1",
-    "fuzzaldrin": "^2.1.0"
+    "fuzzysort": "^1.1.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",
