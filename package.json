@@ -1,6 +1,6 @@
 {
   "name": "alfred-vscode",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Alfred workflow that allows you to browse and open Visual Studio Code (Insiders) projects",
   "license": "MIT",
   "repository": "kbshl/alfred-vscode",
