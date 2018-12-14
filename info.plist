@@ -35,7 +35,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8A722A20-D801-4DAC-AA32-80052ADC87D4</string>
+				<string>A5F42246-10C3-441B-9871-7A28FE42EEEC</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -64,13 +64,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>8A722A20-D801-4DAC-AA32-80052ADC87D4</key>
-		<array/>
 	</dict>
 	<key>createdby</key>
-	<string>Konstantin Büschel</string>
+	<string></string>
 	<key>description</key>
-	<string>Simple workflow that allows you to browse and open Visual Studio Code projects.</string>
+	<string></string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -81,22 +79,22 @@
 			<key>config</key>
 			<dict>
 				<key>concurrently</key>
-				<true/>
+				<false/>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/${vscodeEdition} {query}</string>
+				<string>./.bin/run.sh "$1"</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>run.sh</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>8A722A20-D801-4DAC-AA32-80052ADC87D4</string>
+			<string>A5F42246-10C3-441B-9871-7A28FE42EEEC</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -104,9 +102,9 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<true/>
+				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -126,15 +124,15 @@
 				<key>runningsubtext</key>
 				<string>Loading projects...</string>
 				<key>script</key>
-				<string>$nodePath vsc.js projects</string>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Load Visual Studio Code project</string>
+				<string>Load Visual Studio Code (Insiders) project</string>
 				<key>title</key>
-				<string>Visual Studio Code</string>
+				<string>Visual Studio Code (Insiders)</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -161,7 +159,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -184,7 +182,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -201,13 +199,13 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>/usr/local/bin/${vscodeEdition} "{query}"</string>
+				<string>./.bin/run.sh "$1"</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -243,7 +241,7 @@
 					</dict>
 					<dict>
 						<key>field</key>
-						<string>kMDItemAlternateNames</string>
+						<string>kMDItemTextContent</string>
 						<key>not</key>
 						<false/>
 						<key>split</key>
@@ -277,9 +275,9 @@
 					<string>~</string>
 				</array>
 				<key>subtext</key>
-				<string>Open within Visual Studio Code</string>
+				<string>Open within Visual Studio Code (Insiders)</string>
 				<key>title</key>
-				<string>Visual Studio Code</string>
+				<string>Visual Studio Code (Insiders)</string>
 				<key>types</key>
 				<array/>
 				<key>withspace</key>
@@ -306,7 +304,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -319,34 +317,7 @@
 	<key>readme</key>
 	<string># Alfred Visual Studio Code Project Manager Workflow
 
-Simple workflow that allows you to browse and open [Visual Studio Code](https://code.visualstudio.com/) projects.
-
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Usage](#usage)
-
-## Requirements
-
-* [NodeJS](https://nodejs.org)
-* [Visual Studio Code Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
-* [Visual Studio Code Command Line](https://code.visualstudio.com/docs/setup/mac)
-* [Alfred Powerpack](https://www.alfredapp.com/powerpack)
-
-## Installation
-
-Download the latest `VisualStudioCode.alfredworkflow` from [GitHub](https://github.com/konstantinbueschel/alfred-vs-code/releases) and import it in Alfred.
-
-**Note for Insiders Edition users:** Remember to set the 'vscodeEdition' variable in Workflow Configuration to 'code-insiders'!
-
-## Usage
-
-Simply type `vsc` followed by space to list all projects. Optionally type a search string to filter results.
-
-![alfred-vs-code](documentation/screenshot.png)
-
-## Thanks!
-
-Big Thanks to [Cloudstek](https://github.com/Cloudstek) for his [Alfred Atom Workflow](https://github.com/Cloudstek/alfred-atom) which I used as a base for this project.</string>
+For furher details see https://github.com/kbshl/alfred-vscode</string>
 	<key>uidata</key>
 	<dict>
 		<key>0344F04E-AC60-4847-AA73-E093D16BBB46</key>
@@ -366,16 +337,16 @@ Big Thanks to [Cloudstek](https://github.com/Cloudstek) for his [Alfred Atom Wor
 		<key>48B1068B-C755-4DBE-BDAB-9F24B0EE3354</key>
 		<dict>
 			<key>xpos</key>
-			<integer>120</integer>
+			<integer>100</integer>
 			<key>ypos</key>
-			<integer>420</integer>
+			<integer>480</integer>
 		</dict>
 		<key>4DD30082-AABC-4CFA-8FC3-0738FA31C350</key>
 		<dict>
 			<key>xpos</key>
-			<integer>110</integer>
+			<integer>100</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>170</integer>
 		</dict>
 		<key>76A26469-7BB5-46C5-ADFE-C95581EB9B95</key>
 		<dict>
@@ -391,7 +362,7 @@ Big Thanks to [Cloudstek](https://github.com/Cloudstek) for his [Alfred Atom Wor
 			<key>ypos</key>
 			<integer>420</integer>
 		</dict>
-		<key>8A722A20-D801-4DAC-AA32-80052ADC87D4</key>
+		<key>A5F42246-10C3-441B-9871-7A28FE42EEEC</key>
 		<dict>
 			<key>xpos</key>
 			<integer>520</integer>
@@ -401,8 +372,6 @@ Big Thanks to [Cloudstek](https://github.com/Cloudstek) for his [Alfred Atom Wor
 	</dict>
 	<key>variables</key>
 	<dict>
-		<key>nodePath</key>
-		<string>/usr/local/bin/node</string>
 		<key>terminalApp</key>
 		<string></string>
 		<key>vscodeEdition</key>
@@ -410,11 +379,11 @@ Big Thanks to [Cloudstek](https://github.com/Cloudstek) for his [Alfred Atom Wor
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>terminalApp</string>
+		<string>vscodeEdition</string>
 	</array>
 	<key>version</key>
-	<string>1.2.0</string>
+	<string></string>
 	<key>webaddress</key>
-	<string>https://github.com/konstantinbueschel/alfred-vs-code</string>
+	<string></string>
 </dict>
 </plist>
