@@ -1,0 +1,14 @@
+### nodeJS ###
+node_modules
+
+### Webpack ###
+webpack.*.js
+
+### Gulp ###
+gulpfile*.js
+
+### VSCode ###
+.history
+
+### Project specific ###
+dist
