@@ -3,7 +3,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Github all releases](https://img.shields.io/github/downloads/kbshl/alfred-vscode/total.svg)](https://github.com/kbshl/alfred-vscode/releases/)
 [![GitHub stars](https://img.shields.io/github/stars/kbshl/alfred-vscode.svg)](https://github.com/kbshl/alfred-vscode/stargazers/)
-[![NPM total downloads](https://img.shields.io/npm/kbshl/alfred-vscode.svg)](https://www.npmjs.com/package/alfred-vscode)
+[![NPM total downloads](https://img.shields.io/npm/dt/alfred-vscode.svg)](https://www.npmjs.com/package/alfred-vscode)
 [![NPM license](https://img.shields.io/npm/l/alfred-vscode.svg)](https://www.npmjs.com/package/alfred-vscode)
 
 > [Alfred 3](https://www.alfredapp.com) workflow that allows you to browse and open [Visual Studio Code (Insiders)](https://code.visualstudio.com/) projects or simply open specified folders/files.
