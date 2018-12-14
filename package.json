@@ -29,7 +29,8 @@
     "index.js",
     "lib",
     "*.png",
-    "info.plist"
+    "info.plist",
+    ".bin"
   ],
   "scripts": {
     "postinstall": "alfy-init",
