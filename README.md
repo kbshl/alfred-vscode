@@ -31,6 +31,12 @@ Remember to set the `vscodeEdition` variable to `code-insiders` in the Workflow 
 
 It defaults to `code`.
 
+### Reuse window option
+
+If you want to open project with same vscode window, you can use reuse option.
+
+To set the `reuseWindow` variable to `true` in the Workflow Configuration.
+
 ## Usage
 
 ### Projects
