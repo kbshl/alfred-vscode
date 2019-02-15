@@ -29,6 +29,10 @@ npm install --global alfred-vscode
 
 Remember to set the `vscodeEdition` variable to `code-insiders` in the Workflow Configuration!
 
+**Not for VSCodium users:**
+
+Remember to set the `vscodeEdition` variable to `codium` in the Workflow Configuration!
+
 It defaults to `code`.
 
 ## Usage
