@@ -14,10 +14,10 @@
 
 You need
 
-* [Node.js 8+](https://nodejs.org)
-* [Alfred 3](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade
-* [Visual Studio Code Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) - Only if you like to have a project manager for VS Code.
-* [Visual Studio Code Command Line](https://code.visualstudio.com/docs/setup/mac)
+- [Node.js 8+](https://nodejs.org)
+- [Alfred 3](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade
+- [Visual Studio Code Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) - Only if you like to have a project manager for VS Code.
+- [Visual Studio Code Command Line](https://code.visualstudio.com/docs/setup/mac)
 
 ## Installation
 
@@ -29,7 +29,7 @@ npm install --global alfred-vscode
 
 Remember to set the `vscodeEdition` variable to `code-insiders` in the Workflow Configuration!
 
-**Not for VSCodium users:**
+**Note for VSCodium users:**
 
 Remember to set the `vscodeEdition` variable to `codium` in the Workflow Configuration!
 
