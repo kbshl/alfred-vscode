@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [2.1.0](https://github.com/kbshl/alfred-vscode/compare/v2.0.2...v2.1.0) (2019-04-22)
+
+
+### Code Refactoring
+
+* move to alfy and repalce sort/search module dep ([#11](https://github.com/kbshl/alfred-vscode/issues/11)) ([63ac4f7](https://github.com/kbshl/alfred-vscode/commit/63ac4f7))
+
+
+### Features
+
+* add support for VSCodium ([#14](https://github.com/kbshl/alfred-vscode/issues/14)) ([a00a5de](https://github.com/kbshl/alfred-vscode/commit/a00a5de))
+
+
+### BREAKING CHANGES
+
+* refactor code base to use alfy and refactor code to use
+better programming styles. No breaking change for users but for devs.
+
+
+
 <a name="2.0.2"></a>
 ## [2.0.2](https://github.com/kbshl/alfred-vscode/compare/v2.0.1...v2.0.2) (2018-12-14)
 
