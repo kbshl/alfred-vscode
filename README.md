@@ -1,12 +1,15 @@
 # alfred-vscode
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Github all releases](https://img.shields.io/github/downloads/kbshl/alfred-vscode/total.svg)](https://github.com/kbshl/alfred-vscode/releases/)
-[![GitHub stars](https://img.shields.io/github/stars/kbshl/alfred-vscode.svg)](https://github.com/kbshl/alfred-vscode/stargazers/)
-[![NPM total downloads](https://img.shields.io/npm/dt/alfred-vscode.svg)](https://www.npmjs.com/package/alfred-vscode)
-[![NPM license](https://img.shields.io/npm/l/alfred-vscode.svg)](https://www.npmjs.com/package/alfred-vscode)
+> [Alfred 3](https://www.alfredapp.com) workflow that allows you to browse and open [Visual Studio Code](https://code.visualstudio.com/) projects or simply open specified folders/files.
 
-> [Alfred 3](https://www.alfredapp.com) workflow that allows you to browse and open [Visual Studio Code (Insiders)](https://code.visualstudio.com/) projects or simply open specified folders/files.
+[![Commitizen friendly][commitizen-badge]][commitizen]
+[![dependencies][deps-badge]][deps]
+[![version][version-badge]][package]
+[![downloads][downloads-badge]][npmcharts]
+[![downloads total][downloads-total-badge]][downloads-total]
+[![MIT License][license-badge]][license]
+[![Watch on GitHub][github-watch-badge]][github-watch]
+[![Star on GitHub][github-star-badge]][github-star]
 
 ![alfred-vscode in action](docs/screenshot.png)
 
@@ -14,10 +17,10 @@
 
 You need
 
-* [Node.js 8+](https://nodejs.org)
-* [Alfred 3](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade
-* [Visual Studio Code Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) - Only if you like to have a project manager for VS Code.
-* [Visual Studio Code Command Line](https://code.visualstudio.com/docs/setup/mac)
+- [Node.js 8+][node]
+- [Alfred 3][alfred] with the paid [Powerpack][alfred-powerpack] upgrade
+- [Visual Studio Code Project Manager][vscode-pm] - Only if you like to have a project manager for VS Code.
+- [Visual Studio Code Command Line][vscode-cli]
 
 ## Installation
 
@@ -51,6 +54,35 @@ Type `vs` followed by space and search for a specific folder or file to open in 
 
 Hold <kbd>Shift</kbd> when pressing <kbd>Enter</kbd> to open that folder or file in a new VS Code window.
 
+## Alfred Theme
+
+The Alfred Theme you can see in the screenshot is the [Alfred Snazzy Theme][alfred-theme] from Michele Gerarduzzi. Thanks for this great theme. I've done some slightly adjustments to font and margin sizes.
+
 ## Special Thanks
 
-Big Thanks goes to [Cloudstek](https://github.com/Cloudstek) for his [Alfred Atom Workflow](https://github.com/Cloudstek/alfred-atom) which I used as a base for this project.
+Big Thanks goes to [Cloudstek][cloudstek] for his [Alfred Atom Workflow][alfred-atom] which I used as a base for this project.
+
+[commitizen-badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
+[commitizen]: https://commitizen.github.io/cz-cli
+[deps-badge]: https://david-dm.org/kbshl/alfred-vscode.svg
+[deps]: https://david-dm.org/kbshl/alfred-vscode
+[version-badge]: https://img.shields.io/npm/v/alfred-vscode.svg
+[package]: https://www.npmjs.com/package/alfred-vscode
+[downloads-badge]: https://img.shields.io/npm/dm/alfred-vscode.svg
+[npmcharts]: http://npmcharts.com/compare/alfred-vscode
+[downloads-total-badge]: https://img.shields.io/npm/dt/alfred-vscode.svg
+[downloads-total]: https://www.npmjs.com/package/alfred-vscode
+[license-badge]: https://img.shields.io/npm/l/alfred-vscode.svg
+[license]: https://github.com/kbshl/alfred-vscode/blob/master/LICENSE
+[github-watch-badge]: https://img.shields.io/github/watchers/kbshl/alfred-vscode.svg?style=social
+[github-watch]: https://github.com/kbshl/alfred-vsccode/watchers
+[github-star-badge]: https://img.shields.io/github/stars/kbshl/alfred-vscode.svg?style=social
+[github-star]: https://github.com/kbshl/alfred-vscode/stargazers
+[alfred-theme]: https://github.com/michelegera/alfred-snazzy
+[node]: https://nodejs.org
+[cloudstek]: https://github.com/Cloudstek
+[alfred-atom]: https://github.com/Cloudstek/alfred-atom
+[alfred]: https://www.alfredapp.com
+[alfred-powerpack]: https://www.alfredapp.com/powerpack
+[vscode-cli]: https://code.visualstudio.com/docs/setup/mac
+[vscode-pm]: https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager
