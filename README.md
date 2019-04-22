@@ -54,6 +54,10 @@ Type `vs` followed by space and search for a specific folder or file to open in 
 
 Hold <kbd>Shift</kbd> when pressing <kbd>Enter</kbd> to open that folder or file in a new VS Code window.
 
+## Alfred Theme
+
+The Alfred Theme you can see in the screenshot is the [Alfred Snazzy Theme][alfred-theme] from Michele Gerarduzzi. Thanks for this great theme. I've done some slightly adjustments to font and margin sizes.
+
 ## Special Thanks
 
 Big Thanks goes to [Cloudstek][cloudstek] for his [Alfred Atom Workflow][alfred-atom] which I used as a base for this project.
