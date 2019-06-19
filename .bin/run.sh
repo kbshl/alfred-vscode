@@ -17,4 +17,3 @@ then
 fi
 
 open -a "${VSCODE_APP_EDITION}" "${REUSE_WINDOW}" "$1"
-
