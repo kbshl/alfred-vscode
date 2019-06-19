@@ -35,6 +35,12 @@ Remember to set the `vscodeEdition` variable to `codium` in the Workflow Configu
 
 It defaults to `code`.
 
+### Reuse window option
+
+If you want to open project with same vscode window, you can use reuse option.
+
+To set the `reuseWindow` variable to `true` in the Workflow Configuration.
+
 ## Usage
 
 ### Projects

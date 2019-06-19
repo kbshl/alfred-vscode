@@ -376,10 +376,13 @@ For furher details see https://github.com/kbshl/alfred-vscode</string>
 		<string></string>
 		<key>vscodeEdition</key>
 		<string>code</string>
+		<key>reuseWindow</key>
+		<string></string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
 		<string>vscodeEdition</string>
+		<string>reuseWindow</string>
 	</array>
 	<key>version</key>
 	<string></string>
