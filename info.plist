@@ -83,7 +83,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./.bin/run.sh "$1"</string>
+				<string>./run.sh "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -105,6 +105,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -143,7 +145,7 @@
 			<key>uid</key>
 			<string>4DD30082-AABC-4CFA-8FC3-0738FA31C350</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -199,7 +201,7 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>./.bin/run.sh "$1"</string>
+				<string>./run.sh "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -268,12 +270,16 @@
 				<false/>
 				<key>keyword</key>
 				<string>vs</string>
+				<key>limit</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>scopes</key>
 				<array>
 					<string>~</string>
 				</array>
+				<key>sortmode</key>
+				<integer>0</integer>
 				<key>subtext</key>
 				<string>Open within Visual Studio Code (Insiders)</string>
 				<key>title</key>
@@ -288,7 +294,7 @@
 			<key>uid</key>
 			<string>48B1068B-C755-4DBE-BDAB-9F24B0EE3354</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>

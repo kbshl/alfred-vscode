@@ -30,7 +30,7 @@
     "lib",
     "*.png",
     "info.plist",
-    ".bin"
+    "run.sh"
   ],
   "scripts": {
     "postinstall": "alfy-init",
